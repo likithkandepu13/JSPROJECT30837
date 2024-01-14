@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // javascript class and object 
+        class Student 
+        {
+            setData(id,name,status)
+            {
+                //sid,sname,sstaus, are attributes of the student class 
+                this.sid=id
+                this.sname=name
+                this.sstatus=status
+            }
+            getData()
+            {
+                document.writeln("Student Id:"+this.sid+"</br>")
+                document.writeln("Student Id:"+this.sstatus+"</br>")
+                document.writeln("Student Id:"+this.sname+"</br>")
+            }
+        }
+        let s1=new  Student() // s1 is the object of the student class 
+        s1.setData(1,"klu",true)
+        s1.getData()
+        let s2=new Student()
+        s2.setData(2,"MSWD",false)
+        s2.getData()
+        document. writeln( s1.sid+" ,"+S1. sname+" ,"+s1.sstatus+"</br>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //map method used to modify by appliying operation to the existing array and return the array
+        const arr1 = [12,45,56,13,14,90]
+        document.writeln("Array arr1="+arr1+"</br>")
+       const output1 = arr1.map( (element) => (element*5))
+       document.writeln("updated array :"+output1+"<br>")
+       // filter object
+       //will give you filter after applying some condition
+       const arr2= [20,7,42,16,9,12,11,36]
+       document.writeln("Array arr2="+arr2+"</br>")
+       const output2 = arr2.filter((element) => (element%2==1))
+       document.writeln("updated array :"+output2+"<br>")
+
+       //reduce method gives accumulated single value
+       const arr3= [5,8,3,7,9,2,-1]
+       document.writeln("Array arr3="+arr2+"</br>")
+       const total = (sum,element) => sum=sum+element
+       const output3 = arr3.reduce(total,0) // ned to send min value of the sum
+       document.writeln("output="+output3+"</br>")
+
+       const [m,,,n] = names
+       document.writeln(m+"</br>")
+       document.writeln(n+"</br>")
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

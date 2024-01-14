@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Array
+        document.writeln("<u> Demo on Array </u></br>")
+        const s = [34,67,89] //same type of elements
+        document.writeln(typeof s+"</br>")
+        document.writeln(s+"</br>")
+        document.writeln(s.length+"</br>")
+        document.writeln(s[0]+"</br>")
+        document.writeln(s[1]+"</br>")
+        document.writeln(s[2]+"</br>")
+        document.writeln(typeof s[0]+"</br>")
+    
+        s[2]="cse"
+        document.writeln(s)
+        s.push("pfsd",100)
+        document.writeln(s)
+        document.writeln("</br>"+s.length)
+        s.pop
+        document.writeln("</br>"+s.length)
+        document.writeln(s.reverse()+"</br>")
+        document.writeln(s.sort()+"</br>")
+        let element = s.shift()
+        document.writeln(element+"</br>") // delete the element at the top of the array and returns it
+        document.writeln("Array = "+ s+"</br>")
+        let len = s.unshift(100.5)
+        document.writeln(len+"</br>")
+        document.writeln("After Unshifting the value"+ s+"</br>")
+        let len1 = s.unshift(" aws",31)
+        document.writeln(len1+"</br>")
+        document.writeln("After unshifting"+ s+"</br>")
+        document.writeln("<u>Display Array Elements Using For Loop</u> </br>")
+        for(let i =0;i<s.length;i++)
+        {
+            document.writeln(s[i]+"</br>")
+        }
+        document.writeln("<u>Display Array Elements Using For in Loop</u> </br>")
+        for(let i in s)
+        {
+            document.writeln(s[i]+"</br>")
+        }
+        document.writeln("<u>Display Array Elements Using For of Loop </u> </br>")
+        for( let element of s)
+        {
+            document.writeln(element+"</br>")
+        }
+
+        
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>

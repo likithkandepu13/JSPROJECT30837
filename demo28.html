@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <script>
+        // map object -key value pair
+        const demomap = new Map()
+        demomap.set("id",837) // add new elements
+        demomap.set("name","likith")
+        demomap.set("age",19)
+        demomap.set("status",true)
+        demomap.set("name","kelf") // a  new key value updates with the new one // dublicates the key!
+        document.writeln("Map Size :"+demomap.size+"</br>")
+        document.writeln("Type of map:" +typeof demomap +"</br>")
+        document.writeln(demomap.get("id")+"</br>") // to get the elements of the map
+        document.writeln(demomap.get("name")+"</br>")
+        document.writeln(demomap.get("city")+"</br>")
+        document.writeln(demomap.has("id")+"</br>") // returns true of exists
+        document.writeln(demomap.has("i")+"</br>")
+        document.writeln(demomap.has("city")+"</br>")
+        document.writeln("Deletion"+demomap.delete("status")+"</br>") // returns true if deleted else false
+        document.writeln("Map Size :"+demomap.size+"</br>")
+        document.writeln("<u> Display Map keys </u></br>")
+        for ( const k of demomap.keys())
+        {
+            document.writeln(k+"</br>")
+        }
+        document.writeln("</br>")
+        document.writeln("Dispay map values : ")
+        for(const v of demomap.values())
+        {
+            document.writeln(v +"</br>")
+        }
+        document.writeln("Display map values based on keys: </br>")
+        for(const k of demomap.keys())
+        {
+            document.writeln(demomap.get(k))
+        }
+        // entries in the map 
+        document.writeln("<u> </br>Display map keys and values</u></br>")
+        for(const [k,b] of demomap.entries()) // entries key word
+        {
+            document.writeln(k+":"+b+"</br>")
+        }
+        demomap.clear()
+        document.writeln("Map Size :"+demomap.size+"</br>")
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

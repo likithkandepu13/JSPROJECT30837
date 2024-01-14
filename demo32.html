@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // object 
+
+        const person = {"id":100, "name":"klu","age": 30.5,"location": "guntur"}
+        document.writeln(typeof person+"</br>")
+        document.writeln(person.id+"</br>")
+        document.writeln(person.name+"</br>")
+        document.writeln(typeof person.name+"</br>")
+        document.writeln(Object.keys(person)+"</br>")
+        document.writeln(Object.values(person)+"</br>")
+        document.writeln(Object.entries(person)+"</br>")
+        // refer demo4.html
+        document.writeln("<u> Display person object keys </u></br>")
+        for( const k of Object.keys(person))
+        {
+            document.writeln(k+"</br>")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

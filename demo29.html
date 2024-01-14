@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          // map object- for each method
+        const mapobj1= new Map()
+        mapobj1.set("id",123)
+        mapobj1.set("name","klef")
+        mapobj1.set(1,100)
+        document.writeln("Size = "+mapobj1.size+"</br>")
+        document.writeln("<u> Display Map object 1 based on the values & keys</br></u>")
+        mapobj1.forEach( (v)=> {
+            document.writeln(v+"</br>")
+        }); // first takes value then the key as an parameter
+
+        document.writeln("<u> Display Map object 1based on the values </br></u>")
+        
+        mapobj1.forEach((v,k) => {
+            document.writeln(k+":"+v+"</br>")})
+            // second object
+            document.writeln("<u>Display Map object 2 based on the values & keys</br></u>")
+        const mapobj2 = new Map([ ["id",101],["name","klef"] ]) // it is called as a constructor 
+        document.writeln("Size is:"+mapobj2.size+"</br>")
+
+        mapobj2.forEach( (v)=> document.writeln(v))
+        const view = (v,k) => {
+            document.writeln(k+":"+v+"</br>")
+        }
+        mapobj2.forEach(view) // view function is call back
+
+
+
+
+    </script>
+</body>
+</html>
